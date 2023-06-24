@@ -31,7 +31,7 @@ const Header = () => {
       </li>
       <li className="nav-item ">
         {/* <NavLink to="/category" className="nav-link text-light" >My Pokemon </NavLink> */}
-        <NavLink to={`/dashboard/${auth?.user?.role==1 ? 'admin':'user'}`} className="nav-link text-light">Profile</NavLink>
+        <NavLink to={`/dashboard/${auth?.user?.role==1 ? 'admin':'user'}`} className="nav-link text-light"></NavLink>
       </li>
       { 
         !auth.user ? (<>
